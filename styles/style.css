@@ -27,6 +27,8 @@ body::after {
 }
 
 video {
+  position: absolute;
+  z-index: 0;
   display: block;
   width: 100%;
   height: 100%;
@@ -35,17 +37,40 @@ video {
 }
 
 .page__heading {
-  position: absolute;
-  top:60px;
-  z-index: 12;
+  z-index: 1;
   max-width: 740px;
   font-size: 116px;
   letter-spacing: 4px;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 60px;
 }
 
 .page__heading::after {
   content: '*';
 }
 
+.page__heading:hover {
+  color: #4c4c4c;
+  cursor: default;
+}
+
+.page__heading:hover::before {
+  content: 'На самом деле нет.\AВажнее &mdash; научиться ошибаться.';
+  position: absolute;
+  top: 180px;
+  right: 20px;
+  border: 2px solid currentColor;
+  border-radius: 20px;
+  padding: 36px 44px;
+  box-shadow: 0 12px #000;
+  color: #000;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 35px;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: none;
+  background-color: white;
+  white-space: pre;
+}
