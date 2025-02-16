@@ -40,7 +40,7 @@ video {
   z-index: 1;
   max-width: 740px;
   font-size: 116px;
-  letter-spacing: 4px;
+  letter-spacing: 0.035em;
   text-align: center;
   text-transform: uppercase;
   padding-top: 60px;
